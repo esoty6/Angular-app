@@ -6,7 +6,7 @@
     <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed" aria-controls="collapseBasic">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" dropdown id="collapseBasic" [collapse]="!isCollapsed" [isAnimated]="true">
+    <div class="collapse navbar-collapse" dropdown id="collapseBasic" [collapse]="!isCollapsed">
         <ul class="nav navbar">
           <li>
             <a class="dropdown-item" href="#">Recipes</a>
@@ -15,7 +15,7 @@
             <a class="dropdown-item" href="#">Shopping List</a>
           </li>
           <ul class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="#" id="basic-link" dropdownToggle (click)="false"
+            <a class="dropdown-item dropdown-toggle" href="#" id="basic-link" dropdownToggle
                aria-controls="basic-link-dropdown">
               Manage
             </a>

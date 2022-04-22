@@ -1,21 +1,9 @@
-.as {
-  animation-duration: 0.75s;
-  animation-name: slidein;
-
-}
-
-@keyframes slidein {
-  from {
-    margin-top: -50%;
-    font-size: 50%;
-  }
-
-  50% {
-    font-size: 150%;
-  }
-
-  to {
-    margin-top: 0;
-    font-size: 100%;
+@media only screen and (max-width: 991px) {
+  ul.nav, ul.navbar {
+    display: block;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
   }
 }
