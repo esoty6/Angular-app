@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" dropdown id="collapseBasic" [collapse]="!isCollapsed">
         <ul class="nav navbar">
           <li>
-            <a class="dropdown-item" href="#">Recipes</a>
+            <a class="dropdown-item" href="#" (click)="onSelect('recipe')">Recipes</a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">Shopping List</a>
+            <a class="dropdown-item" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
           </li>
           <ul class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" id="basic-link" dropdownToggle

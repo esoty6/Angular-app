@@ -13,6 +13,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { BsDropdownModule} from "ngx-bootstrap/dropdown";
 import {CollapseModule} from "ngx-bootstrap/collapse";
 import {NgxNavbarModule} from "ngx-bootstrap-navbar";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {NgxNavbarModule} from "ngx-bootstrap-navbar";
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
     CollapseModule,
