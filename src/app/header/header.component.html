@@ -7,16 +7,15 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" dropdown id="collapseBasic" [collapse]="!isCollapsed">
-        <ul class="nav navbar">
-          <li>
+        <div class="nav navbar">
+          <span>
             <a class="dropdown-item" href="#" (click)="onSelect('recipe')">Recipes</a>
-          </li>
-          <li>
+          </span>
+          <span>
             <a class="dropdown-item" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
-          </li>
-          <ul class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="#" id="basic-link" dropdownToggle
-               aria-controls="basic-link-dropdown">
+          </span>
+          <div class="dropdown manage" appDropdown>
+            <a class="dropdown-item dropdown-toggle" href="#" id="basic-link" dropdownToggle>
               Manage
             </a>
             <ul id="basic-link-dropdown" *dropdownMenu class="dropdown-menu"
@@ -24,8 +23,8 @@
               <li><a class="dropdown-item" href="#">Save Data</a></li>
               <li><a class="dropdown-item" href="#">Fetch Data</a></li>
             </ul>
-          </ul>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
 </nav>

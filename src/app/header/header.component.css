@@ -1,9 +1,42 @@
+div.nav.navbar div:last-child {
+  margin-left: auto;
+  text-align: center;
+}
+
+div.nav.navbar {
+  width: 100%;
+}
+
+#basic-link-dropdown {
+  margin-left: -1.75rem;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+.manage {
+  margin-right: 1rem;
+}
+
 @media only screen and (max-width: 991px) {
-  ul.nav, ul.navbar {
+  div.nav, div.navbar {
     display: block;
     align-content: center;
     align-items: center;
     text-align: center;
     align-self: center;
+  }
+
+  .dropdown-menu {
+    position: unset;
+  }
+
+  #basic-link-dropdown {
+    margin: 0;
+  }
+
+  .manage {
+    margin-right: 0;
   }
 }

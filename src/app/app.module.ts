@@ -14,6 +14,7 @@ import { BsDropdownModule} from "ngx-bootstrap/dropdown";
 import {CollapseModule} from "ngx-bootstrap/collapse";
 import {NgxNavbarModule} from "ngx-bootstrap-navbar";
 import {FormsModule} from "@angular/forms";
+import {DropdownDirective} from "./shared/dropdown.directive";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {FormsModule} from "@angular/forms";
     RecipeListComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    RecipeItemComponent
+    RecipeItemComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
